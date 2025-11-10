@@ -1,4 +1,5 @@
-import create from "zustand";
+// lib/store.ts
+import create from 'zustand';
 
 type State = {
   products: any[];
