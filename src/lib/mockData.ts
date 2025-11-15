@@ -29,3 +29,20 @@ export function getMockProducts() {
     { id: 'p6', name: 'Formal Belt', price: 699, stock: 15 },
   ];
 }
+
+export function getMockOrders() {
+  return [
+    { id: 'o1', customer: 'Riya Sharma', amount: 4999, status: 'pending' },
+    { id: 'o2', customer: 'Amit Kumar', amount: 2499, status: 'shipped' },
+    { id: 'o3', customer: 'Nina Patel', amount: 1299, status: 'delivered' },
+    { id: 'o4', customer: 'John Doe', amount: 3599, status: 'pending' },
+  ];
+}
+
+export function getMockCustomers() {
+  return [
+    { id: 'c1', name: 'Riya Sharma', email: 'riya@example.com', orders: 3 },
+    { id: 'c2', name: 'Amit Kumar', email: 'amit@example.com', orders: 1 },
+    { id: 'c3', name: 'Nina Patel', email: 'nina@example.com', orders: 5 },
+  ];
+}

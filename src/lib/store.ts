@@ -1,5 +1,6 @@
 // lib/store.ts
-import create from 'zustand';
+import { create } from 'zustand';
+import { getMockProducts } from './mockData';
 
 type State = {
   products: any[];
@@ -7,6 +8,6 @@ type State = {
 };
 
 export const useStore = create<State>((set) => ({
-  products: [],
+  products: getMockProducts(),
   setProducts: (p) => set({ products: p }),
 }));
